@@ -1,18 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-
 @Component({
-  selector: 'app-root',
+  selector: 'dispensar-billetes',
   standalone: true,
-  imports: [RouterOutlet,FormsModule,
+  imports: [FormsModule,
     CommonModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './dispensar-billetes.component.html',
+  styleUrl: './dispensar-billetes.component.css'
 })
-export class AppComponent {
-  title = 'Cajero';
+export class DispensarBilletesComponent {
   montoSolicitado: number;
   denominaciones: Array<number>;
   billetes: Array<number>;
